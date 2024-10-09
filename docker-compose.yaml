@@ -1,0 +1,16 @@
+version: '3'
+services:
+  difyopenaiapis:
+    image: "difyopenaiapis:0.1.8"
+    container_name: difyopenaiapis
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3000
+      DIFY_BASE_URL: "http://dify.api.to"
+      DIFY_API_KEY: "app-******"
+      DIFY_TIMEOUT: 20
+      WORKERS_NUM: 4
+      RUST_LOG: "debug"
+    ports:
+      - '8080:3000'
+    restart: "always"
