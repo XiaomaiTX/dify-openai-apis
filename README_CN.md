@@ -48,9 +48,3 @@ cargo install dify-openai-apis
 # export PATH=$HOME/.cargo/bin:$PATH
 dify-openai-apis
 ```
-
-构建 Docker 镜像
-
-```sh
-docker build --pull --rm -t difyopenaiapis:0.1.8 "."
-```

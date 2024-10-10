@@ -1,8 +1,8 @@
 version: '3'
 services:
-  difyopenaiapis:
-    image: "difyopenaiapis:0.1.8"
-    container_name: difyopenaiapis
+  dify-openai-apis:
+    image: xiaomaitx/dify-openai-apis
+    container_name: dify-openai-apis
     environment:
       HOST: 0.0.0.0
       PORT: 3000
